@@ -102,14 +102,15 @@ p {
 }
 
 .rachel {
-  color: #e67e22;
+  color: yellow;
   position: absolute;
   top: 5%;
   left: 6%;
+  font-size: 2.4em;
 }
 
 .emma {
-  color: blue;
+  color: #16FF0B;
   position: absolute;
   font-size: 3.7em;
   top: 35%;
@@ -124,7 +125,7 @@ p {
 }
 
 .topaz {
-  color: lightgreen;
+  color: #16FF0B;
   position: absolute;
   top: 32%;
   right: 14%;
@@ -157,7 +158,7 @@ p {
 
 
 .izzy {
-  color: lightblue;
+  color: #06A6F6;
   position: absolute;
   font-size: 1.9em;
   top: 6%;
@@ -165,7 +166,7 @@ p {
 }
 
 .chris {
-  color: lightblue;
+  color: #06A6F6;
   position: absolute;
   bottom: 10%;
   right: 11%;
