@@ -71,6 +71,9 @@ a:hover{
 }
 
 
+
+
+
 h1 {
   font-size: 3rem;
   text-transform: uppercase;
@@ -131,3 +134,10 @@ p {
   bottom: 25%;
   right: 13%;
 }
+
+@media (max-width: 981px) {
+  .mobile {
+    display:none;
+  }
+}
+
