@@ -173,6 +173,14 @@ p {
   font-size: 25px
 }
 
+.juan {
+  color: red;
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+  font-size: 1.8em; 
+}
+
 
 @media (max-width: 981px) {
   .mobile {
