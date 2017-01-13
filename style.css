@@ -93,47 +93,77 @@ p {
   font-size: 3em;
 }
 
-.one {
+.sumi {
   color: red;
   position: absolute;
+  font-size: 2.5em;
   top: 6%;
   right: 10%;
 }
 
-.two {
+.rachel {
   color: #e67e22;
   position: absolute;
   top: 5%;
   left: 6%;
 }
 
-.three {
+.emma {
   color: blue;
   position: absolute;
+  font-size: 3.7em;
   top: 35%;
   left: 10%;
 }
 
-.four {
+.amy {
   color: yellow;
   position: absolute;
   top: 30%;
   right: 30%;
 }
 
-.five {
-  color: purple;
+.topaz {
+  color: lightgreen;
+  position: absolute;
+  top: 32%;
+  right: 14%;
+  font-size: 1.7em;
+
+}
+
+.chriscelle {
+  color: red;
+  font-size: 1.5em;
+  position:absolute;
+  top: 25%;
+  left: 3%;
+}
+
+.wallace {
+  color: violet;
   position: absolute;
   bottom: 10%;
   left: 5%;
 }
 
-.six {
-  color: green;
+.kristin {
+  color: #FB93FC;
   position: absolute;
-  bottom: 25%;
+  bottom: 28%;
   right: 13%;
+  font-size: 25px
 }
+
+
+.izzy {
+  color: lightblue;
+  position: absolute;
+  font-size: 1.9em;
+  top: 6%;
+  right: 40%;
+}
+
 
 @media (max-width: 981px) {
   .mobile {
