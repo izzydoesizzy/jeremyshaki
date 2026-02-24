@@ -22,11 +22,17 @@
 </head>
 
 <body>
-    <audio id="bgAudio" loop="loop" autoplay="autoplay" volume="0.3">  
-   <source src="music.ogg" />  
-   <source src="kirbymusic2.mp3" />  
+    <div id="splash" style="position:fixed;top:0;left:0;width:100%;height:100%;background:#000;z-index:9999;display:flex;align-items:center;justify-content:center;cursor:pointer;">
+        <div style="text-align:center;color:white;font-family:sans-serif;">
+            <h2 style="font-size:2.5rem;letter-spacing:.2rem;margin-bottom:1rem;">JEREMY SHAKI</h2>
+            <p style="font-size:1.2rem;opacity:0.7;">click anywhere to enter</p>
+        </div>
+    </div>
+    <audio id="bgAudio" loop="loop" volume="0.3">
+   <source src="music.ogg" />
+   <source src="kirbymusic2.mp3" />
 </audio>
-    <video id="bgvid" playsinline autoplay muted loop preload="auto">
+    <video id="bgvid" playsinline muted loop preload="auto">
  <!--  WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
 <source src="jeremyshaki2.mp4" type="video/mp4">
 </video>
@@ -55,14 +61,17 @@
     <p class="juan"><span class="tooltip" title="I have an apple, you have a pen.. -Juan">very apple</span></p>
 
     <script>
-        backgroundAudio = document.getElementById("bgAudio");
+        var backgroundAudio = document.getElementById("bgAudio");
         backgroundAudio.volume = 0.1;
 
-        // Ensure background video plays (some browsers block autoplay)
-        var vid = document.getElementById("bgvid");
-        if (vid) {
-            vid.play().catch(function() {});
-        }
+        document.getElementById("splash").addEventListener("click", function() {
+            this.style.display = "none";
+            backgroundAudio.play();
+            var vid = document.getElementById("bgvid");
+            if (vid) {
+                vid.play().catch(function() {});
+            }
+        });
     </script>
 </body>
 
