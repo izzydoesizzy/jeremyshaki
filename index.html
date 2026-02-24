@@ -69,6 +69,7 @@
             backgroundAudio.play();
             var vid = document.getElementById("bgvid");
             if (vid) {
+                vid.muted = false;
                 vid.play().catch(function() {});
             }
         });
